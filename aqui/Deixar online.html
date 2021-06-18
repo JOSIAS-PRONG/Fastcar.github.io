@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<neta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Josias</title>
+
+
+<style>
+	/*html,body{margin-top:0;}*/
+*{
+	font-family:Snell Roundhand, cursive;
+
+
+}
+html, body{
+margin: 0px;
+padding: 0px 0px;
+background-color: #50beff;
+}
+
+
+button#idnomeequipe1, button#idnomeequipe2, button#blocodoisanda, button#blocoanda{
+margin:none;
+border-radius:60px;
+}
+
+.blocos, .reultado:hover{
+border-radius:60px;
+margin-left:10px;
+background-color: #95afc0;
+}
+/*.blocos:active{
+
+	background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: -moz-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: -o-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: -ms-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     border: 1px solid #CCCCCE;
+     border-radius: 3px;
+     box-shadow: 0 3px 0 rgba(0, 0, 0, .3),
+                   0 2px 7px rgba(0, 0, 0, 0.2);
+  
+}*/
+.localperguntar{
+   background-color: #808e9b;
+padding: 10px 0px;
+
+}
+.spritenuvemcima1{
+    text-align: center;
+    position: absolute;
+    width: 293px;
+    height: 60px;
+    z-index: 10;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+.spritenuvemcima2{
+
+
+
+  text-align: center;
+    position: absolute;
+    width: 293px;
+    height: 60px;
+    z-index: 10;
+  margin-left: 757px;
+  margin-top: 20px;
+
+}
+.spritenuvembaixo1{
+
+ text-align: center;
+    position: absolute;
+ width: 150px;
+    height: 40px;
+    z-index: 0;
+  margin-left: 800px;
+  margin-top: 180px;
+}
+.spritenuvembaixo2{
+
+ text-align: center;
+position: absolute;
+ width: 150px;
+    height: 70px;
+    z-index: 10;
+  margin-left: 1150px;
+  margin-top: 332px;
+}
+
+/*.spritenuvem3baixo1{ 
+   text-align: center;
+    position: absolute;
+ width: 150px;
+    height: 70px;
+    z-index: 10;
+  margin-left: 770px;
+  margin-top:500px;
+}*/
+.spritenuvem3baixo4{
+    text-align: center;
+    position: absolute;
+ width: 30px;
+    height: 25px;
+    z-index: 10;
+  margin-left: 560px;
+  margin-top: 490px;
+}
+.criador{
+color: white;
+cursor:help;
+
+}
+
+.stilopergunta{
+font-family: Comic Sans MS, serif;
+ font-size: 50px;
+}
+.stilopergunta2{
+font-family: Comic Sans MS, serif;
+ font-size: 50px;
+}
+
+
+.abrirpop{
+            display:  block;
+            margin: 20px auto;
+            background: crimson;
+            color: white;
+            border: 0;
+            cursor: pointer;
+            padding: 6px 10px;
+        }
+.popup-wrapper{
+display: none;
+background: rgba(0, 0, 0, .5);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+ z-index: 100;
+
+
+}
+.popup{
+
+font-family: arial;
+text-align: center;
+width:100%;
+max-width: 300px;
+margin: 10% auto;
+padding: 20px;
+background: white;
+position: relative;
+border-radius: 20px;
+
+}
+.popup a {
+      color: white;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 6px 10px;
+            background: crimson;
+
+}
+
+.abrirpop2{
+            display:  block;
+            margin: 20px auto;
+            background: crimson;
+            color: black;
+            border: 0;
+            cursor: pointer;
+            padding: 6px 10px;
+        }
+.popup-wrapper2{
+display: none;
+background: rgba(0, 0, 0, 5);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+ z-index: 100;
+
+}
+.popup2{
+
+font-family: arial;
+text-align: center;
+width:900px;
+max-width: 1300px;
+margin: 10% auto;
+padding: 20px;
+background: white;
+position: relative;
+border-radius: 20px;
+
+}
+.abrirpop3{
+            display:  block;
+            margin: 20px auto;
+            background: crimson;
+            color: white;
+            border: 0;
+            cursor: pointer;
+            padding: 6px 10px;
+        }
+.popup-wrapper3{
+display: none;
+background: rgba(0, 0, 0, .5);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+ z-index: 100;
+
+}
+.popup3{
+
+font-family: arial;
+text-align: center;
+width:100%;
+max-width: 800px;
+margin: 10% auto;
+padding: 20px;
+background: white;
+position: relative;
+border-radius: 20px;
+
+}
+
+
+.abrirpop4{
+            display:  block;
+            margin: 20px auto;
+            background: crimson;
+            color: white;
+            border: 0;
+            cursor: pointer;
+            padding: 6px 10px;
+        }
+.popup-wrapper4{
+display: none;
+background: rgba(0, 0, 0, .5);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+ z-index: 100;
+
+}
+.popup4{
+
+font-family: arial;
+text-align: center;
+width:100%;
+max-width: 800px;
+margin: 10% auto;
+padding: 20px;
+background: white;
+position: relative;
+border-radius: 20px;
+
+}
+.abrirpop5{
+            display:  block;
+            margin: 20px auto;
+            background: crimson;
+            color: black;
+            border: 0;
+            cursor: pointer;
+            padding: 6px 10px;
+        }
+.popup-wrapper5{
+display: none;
+background: rgba(0, 0, 0, 5);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+ z-index: 100;
+
+}
+.popup5{
+
+font-family: arial;
+text-align: center;
+width:900px;
+max-width: 1300px;
+margin: 10% auto;
+padding: 20px;
+background: white;
+position: relative;
+border-radius: 20px;
+
+}
+
+.inputpergunta{
+font-family: Comic Sans MS;
+font-size: 40px;
+border-radius: 20px;
+border: auto;
+}
+.inputpergunta2{
+font-family: Comic Sans MS;
+font-size: 40px;
+border-radius: 20px;
+border: auto;
+}
+.perguntar{
+
+margin-left: 1200px;
+margin-top: 0px;
+ color: white;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 20px 40px;
+            background: crimson;
+
+}
+.ab{
+            cursor: pointer;
+      color: black;
+            text-decoration: none;
+            padding: 6px 10px;
+            background: #1289A7;
+border-radius:60px;
+font-size: 20px;
+}
+.ac{
+            cursor: pointer;
+      color: black;
+            text-decoration: none;
+            padding: 6px 10px;
+            background:#EA2027;
+border-radius:60px;
+font-size: 20px;
+}
+.a{
+            cursor: pointer;
+      color: black;
+            text-decoration: none;
+            padding: 6px 10px;
+            background: #c7ecee;
+border-radius:60px;
+font-size: 20px;
+}
+
+.popup-close{
+font-family: arial;
+font-size: 15px;
+position: absolute;
+top: 5px;
+right: 10px;
+cursor: pointer;
+}
+
+/*.spritenuvem3baixo3{
+ text-align: center;
+    position: absolute;
+ width: 40px;
+    height: 30px;
+    z-index: 1;
+  margin-left: 500px;
+  margin-top: 500px;
+}*/
+
+.spritenuvem3baixo2{
+ text-align: center;
+    position: absolute;
+ width: 200px;
+    height: 150px;
+    z-index: 1;
+  margin-left: 1100px;
+  margin-top: 500px;
+}
+
+.tamanhoplacar{
+   margin-left: 0px;
+margin-top: 0px;
+  font-size: 25px;
+}
+.placar{
+
+	border-radius:10px;
+	    height: 6px;
+    text-align:center;
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+	margin-left: 100px;
+	margin-top: 0px;
+
+  background-color: black; /* Green */
+  border: none;
+  color: green;
+  padding: 50px 32px;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+}
+
+canvas{
+
+position:absolute;
+top:60px;
+bottom:0px;
+left: 0%;
+right:50%;
+border: 0px solid #000;
+min-height: 590px;
+max-width: 1100px;
+}
+
+.nomesdaequipe{ 
+	position:absolute; 
+	margin-left:250px;
+	text-align: center;
+	  margin-top:193px;
+    width: 200px;
+    text-align : center;
+    padding: 10px 0px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    background-color: #485460;
+    font-size: 18px;
+}
+.avancabloco{
+position:absolute; 
+	margin-left:0px;
+	text-align: center;
+  margin-top:193px;
+    width: 200px;
+    text-align: center;
+    padding: 20px 0px;
+    border: 5px solid #000;
+      border-radius: 10px;
+    background-color:#d2dae2;
+    font-size: 18px;
+
+}
+.avancabloco3{
+position:absolute; 
+   margin-left:510px;
+   text-align: center;
+    margin-top:193px;
+    width: 200px;
+    text-align: center;
+    padding: 20px 0px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    background-color: #d2dae2;
+    font-size: 18px;
+
+}
+.avancabloco4{
+position:relative; 
+   margin-left:770px;
+   text-align: center;
+   margin-top:193px;
+    width: 200px;
+    text-align: center;
+    padding: 20px 0px;
+    border: 5px solid #000;
+   border-radius: 10px;
+    background-color: #485460;
+    font-size: 18px;
+
+}
+@media screen and (min-width:
+1024px) {
+ #main { min-width: 1000px; max-width: 1000px;}
+}
+
+</style>
+
+</head>
+<body>
+
+<img class="spritenuvemcima1"src="spritenuvemespecial.png">
+
+<img class="spritenuvemcima2"src="spritenuvemespecial.png">
+
+<img class="spritenuvembaixo1" src="spritenuvem.png">
+
+
+
+<img class="spritenuvem3baixo1" src="spritenuvem.png">
+<!--
+ <img class="spritenuvem3baixo2" src="https://media.tenor.com/images/a21f1c7455c26d710869bfc42a3eba1b/tenor.gif"> 
+   !-->
+<!--<img class="spritenuvem3baixo4" src="spritenuvem.png">!-->
+
+
+	<form style="margin-left: 100px; margin-top: 0px;"class="placar">
+
+	<input type="button" name="placar2" id="placar2" value="0" width="10px" height="20px" class="tamanhoplacar">
+	<input type="button" name="placar1" id="placar1" value="0"class="tamanhoplacar">
+
+   <input type="button" name="placar2" id="placar3" value="0" width="10px" height="20px" class="tamanhoplacar">
+      <input type="button" name="placar2" id="placar4" value="0" width="10px" height="20px" class="tamanhoplacar">
+	</form>
+   <form class="localperguntar">
+   <h1 style="margin-left: 1100px;">Lancar nova pergunta</h1>
+<button class="perguntar"type="button" onclick="perguntar();">Perguntar</button>
+</form>
+<form class="nomesdaequipe">
+<div>
+<br>
+<button type="button"style="font-size: 20px;" type="button"id="idnomeequipe1" class="a" onclick="anunciar()">Colocar nome da <br>Primeira Equipe</button>
+<br>
+<span class="contarbloco">
+<input style="font-size: 40px;cursor:pointer;"type="button" id="blocodoisanda"  class="blocos" onclick="bloco.colocar(); somarDIR();" value="+10KM"/>
+</span>
+
+ <br>
+
+
+</div>
+
+
+
+</form>
+
+<form class="avancabloco">
+	<div>
+    <button style="font-size: 20px;" type="button"id="idnomeequipe2" class="a" onclick="anunciar2()">Colocar nome da <br>Segunda Equipe</button><br>
+		<span class="contarblocodois">
+<input style="font-size: 40px;cursor:pointer;"type="button"id="blocoanda" class="blocos" onclick="blocodois.proporcao(); somarESC();" value="+10KM"/>
+
+<br>
+</span>
+</div>
+</form>
+
+<form class="avancabloco3">
+   <div>
+    <button style="font-size: 20px;" type="button"id="idnomeequipe3" class="a" onclick="anunciar3(); nometres();">Colocar nome da <br>Terceira Equipe</button><br>
+      <span class="contarblocodois">
+<input style="font-size: 40px;cursor:pointer;"type="button"id="blocoanda" class="blocos" onclick="blocotres.proporcao(); somarESC2();" value="+10KM"/>
+
+<br>
+</div>
+</form>
+
+<form class="avancabloco4">
+   <div>
+    <button style="font-size: 20px;" type="button"id="idnomeequipe" class="a" onclick="anunciar4();">Colocar nome da <br>Quarta Equipe</button><br>
+      <span class="contarblocodois">
+<input style="font-size: 40px; cursor:pointer;"type="button"id="blocoanda" class="blocos" onclick="blocoquatro.proporcao(); somarESC3();" value="+10KM"/>
+
+<br>
+</div>
+</form>
+
+
+<div class="popup-wrapper2">
+<div class="popup2">    
+<div class="popup-content2">
+<h2>Colocar perguntas</h2>
+<h4 id="">OBS: escreva "br" entre "<>" para pular linha</h4>
+<input type="text"class="inputpergunta"  placeholder="Escrever questão..." />
+
+
+<br>
+<br>
+<a href="#" class="a"onclick="perguntafeita(); voltar();">Continuar</a>
+<a href="#" class="ac"onclick="sairtudo();">Sair</a>
+</div>
+</div>
+<center>
+<h3 class="criador"> Criado por Josias Abreu;</h3>
+</center>
+</div>
+
+
+
+<div class="popup-wrapper3">
+<div class="popup3">    
+<div class="popup-content3">
+<h1>Pergunta:</h1>
+
+<h4 id="idperguntar" class="stilopergunta">Códico Crucial...</h4>
+<br>
+<br>
+<a class="a" onclick="alternativasgo()"> Ver alternativas</a>
+<a class="ab" onclick="volta5();"> Retornar</a>
+<a href="#" class="ac"onclick="sairtudo();">Sair</a>
+</div>
+</div>
+
+</div>
+
+<div class="popup-wrapper4">
+<div class="popup4">    
+<div class="popup-content4">
+<h2>Alternativas</h2>
+<h4 id="mudaralternativas2" class="stilopergunta2">Códico Crucial...</h4>
+<br>
+<br>
+<a class="a" onclick="voltartudo();">Continuar partida</a>
+<a class="ab" onclick="volta3();">Retornar</a>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="popup-wrapper5">
+<div class="popup5">    
+<div class="popup-content5">
+<h2>Escreva as Alternativas</h2>
+<h4 id="">OBS: escreva "br" entre "<>" para pular linha</h4>
+<input type="text"class="inputpergunta2"  placeholder="Escrever alternativas..." />
+
+<br>
+<br>
+<a href="#" class="a" onclick="perguntafeita3();">Continuar</a>
+<a href="#" class="ab" onclick="volta2();">Retornar</a>
+<a href="#" class="ac"onclick="sairtudo();">Sair</a>
+</div>
+</div>
+<center>
+<h3 class="criador"> Criado por Josias Abreu;</h3>
+</center>
+</div>
+
+
+
+<div class="popup-wrapper">
+<div class="popup">    
+<div class="popup-content">
+<h3>Parábens a Equipe</h3>
+<h1 id="nomeequipes">Códico Crucial...</h1>
+<br>
+<br>
+<a href="#"onclick="location.reload();">Reiniciar partida</a>
+</div>
+</div>
+<center>
+<h3 class="criador"> Criado por Josias Abreu;</h3>
+</center>
+</div>
+
+
+<script type="text/javascript">
+document.body.style.zoom = "75%";
+
+</script>
+
+<script type="text/javascript" src="sprite.js"> 
+ </script>
+
+ <script type="text/javascript" src="sprite2.js"> 
+ </script>
+  <script type="text/javascript" src="sprite3.js"> 
+ </script>
+ <script type="text/javascript" src="sprite4.js"> 
+ </script>
+<script type="text/javascript" src="partejs.js"> 
+</script>
+<script type="text/javascript" src="sprite5.js"> 
+</script>
+
+
+<audio src="C:\Users\Josias\Downloads\vai.aac" controls style="margin-top: 0px;  position: relative;"> 
+</audio>
+
+
+</body>
+</html>
